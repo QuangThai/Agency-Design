@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Angency Design</title>
+   <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;700&family=Montserrat&display=swap"
+      rel="stylesheet">
+   <link rel="stylesheet" href="css/all.min.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+   <link rel="stylesheet" href="css/grid.css">
+   <link rel="stylesheet" href="css/style.css">
+   <link rel="stylesheet" href="css/responsive.css">
+</head>
+
+<body>
+   <header class="header">
+      <div class="header__bg">
+         <img src="./images/header-bg.png" alt="">
+      </div>
+      <div class="grid wide">
+         <div class="header__inner">
+            <div class="header__logo">
+               <a href="#">
+                  <img class="header__logo-image" src="./images/logo.png" alt="logo">
+               </a>
+            </div>
+            <div class="header__menu hide-on-mobile-tablet">
+               <nav class="header__menu-navbar">
+                  <ul class="header__menu-list">
+                     <li class="header__menu-item">
+                        <a class="header__menu-link header__menu-link--active" href="#">Home</a>
+                     </li>
+                     <li class="header__menu-item">
+                        <a class="header__menu-link" href="#">About us</a>
+                     </li>
+                     <li class="header__menu-item">
+                        <a class="header__menu-link" href="#">Services</a>
+                     </li>
+                     <li class="header__menu-item">
+                        <a class="header__menu-link" href="#">News</a>
+                     </li>
+                     <li class="header__menu-item">
+                        <a class="header__menu-link" href="#">Resources</a>
+                     </li>
+                  </ul>
+               </nav>
+            </div>
+            <!-- mobile -->
+            <div class="nav__mobile">
+               <div class="nav__mobile-icon">
+                  <i class="fal fa-bars js--active"></i>
+               </div>
+               <div class="navbar__overlay"></div>
+               <nav class="navbar__mobile-wrapper">
+                  <div class="mobile__author">
+                     <img class="mobile__author-image" src="./images/logo.png" alt="">
+                     <div class="mobile__author-close">
+                        <i class="fal fa-times mobile__author-close-icon"></i>
+                     </div>
+                  </div>
+                  <ul class="navbar__mobile-list">
+                     <li class="navbar__mobile-item">
+                        <a href="#" class="navbar__mobile-link">Home</a>
+                     </li>
+                     <li class="navbar__mobile-item">
+                        <a href="#" class="navbar__mobile-link">About us</a>
+                     </li>
+                     <li class="navbar__mobile-item">
+                        <a href="#" class="navbar__mobile-link">Services</a>
+                     </li>
+                     <li class="navbar__mobile-item">
+                        <a href="#" class="navbar__mobile-link">News</a>
+                     </li>
+                     <li class="navbar__mobile-item">
+                        <a href="#" class="navbar__mobile-link">Resources</a>
+                     </li>
+                  </ul>
+               </nav>
+            </div>
+            <!-- End mobile -->
+         </div>
+         <div class="row header__banner-container">
+            <div class="col l-7 m-12 c-12">
+               <div class="header__banner-wrapper">
+                  <div class="header__banner">
+                     <div class="header__banner-title">Sharing Vitality </div>
+                     <div class="header__banner-title header__banner-title--strong">Through Designing</div>
+                     <span class="header__banner-desc">clean design and advanced digital solutions</span>
+                     <div class="header__banner-btns">
+                        <a href="#" class="btn btn--rounded btn--active btn--spacing btn--sm">Explore More</a>
+                        <a href="#" class="btn btn--rounded btn--sm">See Live Damo</a>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="col l-5 m-12 c-12 hide-on-mobile-tablet">
+               <div class="header__banner-image">
+                  <img src="./images/2905211.png" alt="banner">
+                  <img class="header__banner-grid" src="./images/Group 224.png" alt="">
+               </div>
+            </div>
+         </div>
+      </div>
+   </header>
+   <main class="main">
+      <section class="about-us">
+         <div class="about-us__wrapper">
+            <div class="about-us__left">
+               <img src="./images/about.png" alt="">
+            </div>
+            <div class="about-us__right">
+               <h5 class="heading">About Me</h5>
+               <h3 class="about-us__right-title">Why hire us for your next project?</h3>
+               <p class="about-us__right-desc">We are Creative Director and UI/UX Designer from New York, working in web
+                  development and print media. We enjoy turning
+                  complex problems into simple, beautiful and intuitive designs</p>
+               <p class="about-us__right-desc about-us__right-desc--spacing">Our job is to build your website so that it
+                  is functional and
+                  user-friendly but at the same time attractive.</p>
+               <a href="" class="btn btn--download btn--active">Download CV</a>
+            </div>
+
+         </div>
+         <div class="about-us__circle about-us__wrapper">
+            <ul class="about-us__circle-list">
+               <li class="about-us__circle-item">
+                  <svg>
+                     <circle cx="70" cy="70" r="70"></circle>
+                     <circle cx="70" cy="70" r="70" class="about-us__circle--design"></circle>
+                  </svg>
+                  <div class="about-us__circle__number">
+                     <h2 class="about-us__circle-percent">50%</h2>
+                     <p class="about-us__circle-title">Web Design</p>
+                  </div>
+               </li>
+               <li class="about-us__circle-item">
+                  <svg>
+                     <circle cx="70" cy="70" r="70"></circle>
+                     <circle cx="70" cy="70" r="70" class="about-us__circle--developer"></circle>
+                  </svg>
+                  <div class="about-us__circle__number">
+                     <h2 class="about-us__circle-percent">75%</h2>
+                     <p class="about-us__circle-title">Development</p>
+                  </div>
+               </li>
+               <li class="about-us__circle-item">
+                  <svg>
+                     <circle cx="70" cy="70" r="70"></circle>
+                     <circle cx="70" cy="70" r="70" class="about-us__circle--web"></circle>
+                  </svg>
+                  <div class="about-us__circle__number">
+                     <h2 class="about-us__circle-percent">20%</h2>
+                     <p class="about-us__circle-title">Web Design</p>
+                  </div>
+               </li>
+               <li class="about-us__circle-item">
+                  <svg>
+                     <circle cx="70" cy="70" r="70"></circle>
+                     <circle cx="70" cy="70" r="70" class="about-us__circle--user"></circle>
+                  </svg>
+                  <div class="about-us__circle__number">
+                     <h2 class="about-us__circle-percent">50%</h2>
+                     <p class="about-us__circle-title">User experience</p>
+                  </div>
+               </li>
+            </ul>
+         </div>
+      </section>
+      <section class="service">
+         <div class="grid wide">
+            <div class="service__inner">
+               <h3 class="heading heading--feature">MY SERVICES</h3><br>
+               <p class="heading-desc">Our Provided Features & Expertise</p>
+            </div>
+            <div class="service__wrapper">
+               <div class="service__wrapper-left">
+                  <div class="service__icon">
+                     <img src="./images/icon-1.png" alt="icon">
+                  </div>
+                  <div class="service__content">
+                     <div class="service__title">Web Design</div>
+                     <div class="service__line">
+                        <span class="service__line-one service__line-one--spacing"></span>
+                        <span class="service__line-one service__line-one--spacing"></span>
+                        <span class="service__line-one"></span>
+                     </div>
+                     <div class="service__desc">Lorem ipsum dolor sit amet,Stet clita kasd lorem ipsum dolor sit amet.
+                        sed diam eirmod tempor dolore.</div>
+                     <a href="#" class="btn btn--active btn--know btn--white">Know More <i
+                           class="far fa-long-arrow-right"></i></a>
+                  </div>
+               </div>
+               <div class="service__wrapper-right">
+                  <h1 class="service__wrapper-percent">95%</h1>
+                  <div class="service__wrapper-progresbar"></div>
+                  <h3 class="service__wrapper-title">web design</h3>
+                  <span class="service__wrapper-skill">HTML, CSS, Jquery</span>
+               </div>
+
+            </div>
+            <div class="service__wrapper">
+               <div class="service__wrapper-left is--active">
+                  <div class="service__icon is--active">
+                     <img src="./images/icon-2.png" alt="icon">
+                  </div>
+                  <div class="service__content">
+                     <div class="service__title is--active">Graphic Design</div>
+                     <div class="service__line">
+                        <span class="service__line-one service__line-one--spacing is--active"></span>
+                        <span class="service__line-one service__line-one--spacing is--active"></span>
+                        <span class="service__line-one is--active"></span>
+                     </div>
+                     <div class="service__desc is--active">Lorem ipsum dolor sit amet,Stet clita kasd lorem ipsum dolor
+                        sit amet.
+                        sed diam eirmod tempor dolore.</div>
+                     <a href="#" class="btn btn--active btn--know btn--white is--active">Know More <i
+                           class="far fa-long-arrow-right"></i></a>
+                  </div>
+               </div>
+               <div class="service__wrapper-right">
+                  <h1 class="service__wrapper-percent">85%</h1>
+                  <div class="service__wrapper-progresbar service__wrapper-progresbar--grapfic"></div>
+                  <h3 class="service__wrapper-title">Graphic Design</h3>
+                  <span class="service__wrapper-skill">Photoshop, Illustrator</span>
+               </div>
+            </div>
+            <div class="service__wrapper">
+               <div class="service__wrapper-left">
+                  <div class="service__icon">
+                     <img src="./images/icon-3.png" alt="icon">
+                  </div>
+                  <div class="service__content">
+                     <div class="service__title">Web Developement</div>
+                     <div class="service__line">
+                        <span class="service__line-one service__line-one--spacing"></span>
+                        <span class="service__line-one service__line-one--spacing"></span>
+                        <span class="service__line-one"></span>
+                     </div>
+                     <div class="service__desc">Lorem ipsum dolor sit amet,Stet clita kasd lorem ipsum dolor sit amet.
+                        sed diam eirmod tempor dolore.</div>
+                     <a href="#" class="btn btn--active btn--know btn--know btn--white">Know More <i
+                           class="far fa-long-arrow-right"></i></a>
+                  </div>
+               </div>
+               <div class="service__wrapper-right">
+                  <h1 class="service__wrapper-percent">70%</h1>
+                  <div class="service__wrapper-progresbar service__wrapper-progresbar--web"></div>
+                  <h3 class="service__wrapper-title">Web Developement</h3>
+                  <span class="service__wrapper-skill">HTML, CSS, Jquery</span>
+               </div>
+            </div>
+            <div class="service__btn">
+               <a href="#" class="btn btn--active btn--radius btn--view">View more</a>
+            </div>
+         </div>
+      </section>
+      <section class="portfolio">
+         <div class="grid wide">
+            <div class="service__inner">
+               <h3 class="heading heading--feature">PORTFOLIO</h3><br>
+               <p class="heading-desc">My Work Examples</p>
+            </div>
+            <div class="row ">
+               <div class="col l-3 m-6 c-12 portfolio__container">
+                  <div class="portfolio__wrapper">
+                     <img src="./images/fish.png" alt="" srcset="">
+                     <div class="portfolio__wrapper-content">
+                        <div class="portfolio__wrapper-title">Phone Mockup</div>
+                        <div class="portfolio__wrapper-icon"><i class="far fa-plus"></i></div>
+                     </div>
+                  </div>
+               </div>
+               <div class="col l-3 m-6 c-12 portfolio__container">
+                  <div class=" portfolio__wrapper">
+                     <img src="./images/app-design3.png" alt="" srcset="">
+                     <div class="portfolio__wrapper-content is--active">
+                        <div class="portfolio__wrapper-title">Phone Mockup</div>
+                        <div class="portfolio__wrapper-icon"><i class="far fa-plus"></i></div>
+                     </div>
+                  </div>
+               </div>
+               <div class="col l-3 m-6 c-12 portfolio__container">
+                  <div class=" portfolio__wrapper">
+                     <img src="./images/How-UX-UI-Design-Will-Help-Your-Business-Succeed.png" alt="" srcset="">
+                     <div class="portfolio__wrapper-content">
+                        <div class="portfolio__wrapper-title">Phone Mockup</div>
+                        <div class="portfolio__wrapper-icon"><i class="far fa-plus"></i></div>
+                     </div>
+                  </div>
+               </div>
+               <div class="col l-3 m-6 c-12 portfolio__container">
+                  <div class=" portfolio__wrapper">
+                     <img src="./images/thumbnail-918x656-01-8be87c (1).png" alt="" srcset="">
+                     <div class="portfolio__wrapper-content">
+                        <div class="portfolio__wrapper-title">Phone Mockup</div>
+                        <div class="portfolio__wrapper-icon"><i class="far fa-plus"></i></div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="service__btn">
+               <a href="#" class="btn btn--active btn--radius btn--center btn--view-all">View all</a>
+            </div>
+         </div>
+      </section>
+      <section class="testimonial">
+         <div class="grid wide">
+            <div class="service__inner service__inner--test">
+               <h3 class="heading heading--feature">TESTIMONIALS</h3><br>
+               <p class="heading-desc">What People Says</p>
+            </div>
+            <div class="testimonial__container">
+               <img src="./images/testi.png" alt="">
+               <p class="testimonial__desc">Lorem ipsum dolor sit amet,Stet clita kasd gubergren, no sea takimata
+                  sanctus est is the
+                  lorem ipsum dolor sit amet. sed diam nonumy eirmod tempor invidunt ut labore et dolore
+                  is the magna aliquyam.</p>
+
+               <div class="testimonial__slider">
+                  <h1 class="testimonial__slider-title">John Doe</h1>
+                  <p class="testimonial__slider-desc">CEO, ABC Company</p>
+                  <div class="testimonial__dots">
+                     <span class="testimonial__dots-one" onclick="currentSlide(1)"></span>
+                     <span class="testimonial__dots-one testimonial__dots-one--active" onclick="currentSlide(2)"></span>
+                     <span class="testimonial__dots-one" onclick="currentSlide(3)"></span>
+                  </div>
+                  <div class="testimonial__images">
+                     <img class="testimonial__image" src="./images/1.png" alt="">
+                     <img class="testimonial__image testimonial__image--active" src="./images/3.png" alt="">
+                     <img class="testimonial__image" src="./images/2.png" alt="">
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <section class="blog">
+         <div class="header__bg header__bg--blog">
+            <img src="./images/bg-blog.png" alt="">
+         </div>
+         <div class="grid wide">
+            <div class="service__inner">
+               <h3 class="heading heading--feature heading--font ">Blog</h3><br>
+               <p class="heading-desc">Trendy News Feeds</p>
+            </div>
+            <div class="row">
+               <div class="col l-4">
+                  <div class="blog__single">
+                     <img src="./images/blog-1.png" alt="">
+                     <div class="blog__content">
+                        <h2 class="blog__date">26th October,2019</h2>
+                        <div class="blog__desc">I enjoy turning complex problems into simple, beautiful and intuitive
+                           designs.
+                        </div>
+                        <div class="service__line service__line--blog">
+                           <span class="service__line-one service__line-one--spacing"></span>
+                           <span class="service__line-one"></span>
+                        </div>
+                        <div class="blog__news">Lorem ipsum dolor sit amet,Stet clita kasd is the most lorem ipsum dolor
+                           sit amet.</div>
+                        <a href="#" class="blog__link">Know <i class="far fa-long-arrow-right"></i></a>
+                     </div>
+                  </div>
+               </div>
+               <div class="col l-4">
+                  <div class="blog__single">
+                     <img src="./images/blog-2.png" alt="">
+                     <div class="blog__content">
+                        <h2 class="blog__date">26th October,2019</h2>
+                        <div class="blog__desc">I enjoy turning complex problems into simple, beautiful and intuitive
+                           designs.
+                        </div>
+                        <div class="service__line service__line--blog">
+                           <span class="service__line-one service__line-one--spacing"></span>
+                           <span class="service__line-one"></span>
+                        </div>
+                        <div class="blog__news">Lorem ipsum dolor sit amet,Stet clita kasd is the most lorem ipsum dolor
+                           sit amet.</div>
+                        <a href="#" class="blog__link">Know <i class="far fa-long-arrow-right"></i></a>
+                     </div>
+                  </div>
+               </div>
+               <div class="col l-4">
+                  <div class="blog__single">
+                     <img src="./images/blog-3.png" alt="">
+                     <div class="blog__content">
+                        <h2 class="blog__date">26th October,2019</h2>
+                        <div class="blog__desc">I enjoy turning complex problems into simple, beautiful and intuitive
+                           designs.
+                        </div>
+                        <div class="service__line service__line--blog">
+                           <span class="service__line-one service__line-one--spacing"></span>
+                           <span class="service__line-one"></span>
+                        </div>
+                        <div class="blog__news">Lorem ipsum dolor sit amet,Stet clita kasd is the most lorem ipsum dolor
+                           sit amet.</div>
+                        <a href="#" class="blog__link">Know <i class="far fa-long-arrow-right"></i></a>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="service__btn">
+               <a href="#" class="btn btn--active btn--radius btn--view">View all</a>
+            </div>
+         </div>
+      </section>
+      <section class="contact">
+         <img class="contact__image-grid" src="./images/grid-contact.png" alt="">
+         <div class="grid wide">
+            <div class="service__inner">
+               <h3 class="heading heading--feature heading--font">Contact me</h3><br>
+               <p class="heading-desc">Send Us a Message</p>
+            </div>
+         </div>
+         <div class="contact__wrapper">
+            <form action="" class="contact__wrapper-form">
+               <div class="input-group input-group--margin">
+                  <input type="text" name="" id="" placeholder="Name">
+               </div>
+               <div class="input-group">
+                  <input type="email" name="" id="" placeholder="Email">
+               </div>
+               <div class="input-group  input-group--margin">
+                  <input type="number" name="" id="" placeholder="Phone#">
+               </div>
+               <div class="input-group">
+                  <select name="" id="">
+                     <option value="">Budget</option>
+                     <option value="">budget</option>
+                     <option value="">budget</option>
+                     <option value="">budget</option>
+                  </select>
+               </div>
+               <div class="input-group input-group--textarea">
+                  <textarea name="" id="" cols="5" rows="5" placeholder="Message"></textarea>
+               </div>
+               <button type="submit" class="btn btn--active btn--send btn--message">Send message</button>
+            </form>
+         </div>
+      </section>
+   </main>
+   <footer class="footer">
+      <div class="grid wide">
+         <div class="footer__wrapper">
+            <div class="footer__wrapper-left">
+               <img class="footer__wrapper-logo" src="./images/logo-footer.png" alt="">
+               <div class="footer__wrapper-desc">Lorem ipsum dolor sit amet,Stet clita kasd gubergren, no sea takimata
+                  sanctus est is the is the magna aliquyam.</div>
+            </div>
+            <div class="footer__wrapper-right">
+               <h4 class="footer__wrapper-heading">We are digital designer living in United States.
+                  Apart from eating burger</h4>
+               <div class="footer__wrapper-info">
+                  <ul class="footer__wrapper-list">
+                     <li class="footer__wrapper-item">
+                        <h3 class="footer__wrapper-item-title">Send Email</h3>
+                        <span class="footer__wrapper-item-info">info@portfolio.com</span>
+                     </li>
+                     <li class="footer__wrapper-item">
+                        <h3 class="footer__wrapper-item-title">make call</h3>
+                        <div class="footer__wrapper-item-info">+123 456 7890</div>
+                        <div class="footer__wrapper-item-info">+123 456 7890</div>
+                     </li>
+                     <li class="footer__wrapper-item">
+                        <h3 class="footer__wrapper-item-title">Get in touch</h3>
+                        <span class="footer__wrapper-item-info">123/A, Hamburger City
+                           New York, USA</span>
+                     </li>
+                  </ul>
+               </div>
+            </div>
+         </div>
+      </div>
+   </footer>
+   <div class="footer__copy-right">2019 All Rights Reserved</div>
+   <div id="back-to-top" class="back-to-top">
+      <i class="fal fa-chevron-up back-to-top__icon" aria-hidden="true"></i>
+   </div>
+   <script src="./js/main.js"></script>
+</body>
+
+</html>
