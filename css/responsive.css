@@ -36,7 +36,10 @@
     padding-top: 60px;
   }
   .footer__wrapper {
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     text-align: center;
     padding-bottom: 20px;
   }
@@ -44,7 +47,10 @@
     margin: 0 auto;
   }
   .footer__wrapper-list {
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
   .footer__wrapper-heading {
     font-size: 16px;
@@ -78,7 +84,8 @@
     padding-top: 340px;
   }
   .about-us__circle-list {
-    flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
   }
   .about-us__circle-item {
     margin-bottom: 15px;
@@ -153,7 +160,10 @@
     min-width: 130px;
   }
   .about-us__wrapper {
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
   .about-us__circle {
     padding-top: 40px;
@@ -167,8 +177,10 @@
     max-width: 100%;
   }
   .about-us__circle-list {
-    justify-content: space-around;
-    flex-wrap: wrap;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
   }
   .about-us__circle-item {
     margin-bottom: 15px;
@@ -183,6 +195,10 @@
   .service {
     padding-top: 60px;
   }
+  .cirlce-box__radius {
+    top: 75%;
+    left: 7%;
+  }
   .testimonial {
     padding-top: 20px;
   }
@@ -193,10 +209,16 @@
     margin-bottom: 50px;
   }
   .service__wrapper:nth-child(odd) {
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
   .service__wrapper:nth-child(even) {
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
   .service__wrapper:nth-child(even) .service__wrapper-left {
     margin-right: 0px;
@@ -208,7 +230,9 @@
     width: 100%;
   }
   .service__wrapper:nth-child(odd) .service__wrapper-left {
-    order: unset;
+    -webkit-box-ordinal-group: unset;
+        -ms-flex-order: unset;
+            order: unset;
     margin-left: 0;
   }
   .service__btn {
