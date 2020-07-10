@@ -171,6 +171,9 @@
   .about-us {
     padding-top: 240px;
   }
+  .about-us__right > img {
+    width: 100%;
+  }
   .about-us__right {
     margin-left: 0;
     padding: 0 20px;
