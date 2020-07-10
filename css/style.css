@@ -176,7 +176,7 @@ img {
 .btn--download:hover,
 .btn--know:hover,
 .btn--view-all:hover,
-.btn--view:hover {
+.btn--view:hover,.btn--message:hover {
   background-color: #33bda6;
 }
 .about-us {
@@ -188,7 +188,6 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  /* align-items: center; */
 }
 
 .about-us__left {
@@ -419,6 +418,11 @@ img {
   -webkit-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
+}
+.service__icon-right {
+  position: relative;
+  top: 16%;
+  width: 20px;
 }
 .service__content {
   padding-top: 36px;
@@ -664,10 +668,11 @@ img {
   text-align: center;
   border: 1px solid var(--white-color);
 }
-.portfolio__wrapper-icon > i {
-  font-size: 30px;
+.portfolio__wrapper-icon > svg {
+  width: 25px;
+  height: 25px;
   color: var(--white-color);
-  line-height: var(--w-h);
+  margin-top: 12px;
 }
 .portfolio__wrapper:hover .portfolio__wrapper-content,
 .portfolio__wrapper .portfolio__wrapper-content.is--active {
@@ -1035,6 +1040,16 @@ img {
   padding: 0px 16px;
   cursor: pointer;
 }
+.mobile__author-close > img {
+  width: 16px;
+}
+svg.svg-inline--fa.fa-bars.fa-w-14.NavBar_icon__13JXR {
+  color: #fff;
+  width: 22px;
+  height: 22px;
+  margin-top: 15px;
+  cursor: pointer;
+}
 .mobile__author-close i {
   font-size: 25px;
   color: var(--color-icon-mobile);
@@ -1059,30 +1074,21 @@ body.is--open-body {
   bottom: 40px;
   right: 40px;
   z-index: 15;
-  color: var(--white-color) fff;
+  color: var(--white-color);
   -webkit-transition: 0.5s ease-in;
   -o-transition: 0.5s ease-in;
   transition: 0.5s ease-in;
   display: none;
-}
-.back-to-top__icon {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
   width: 54px;
   height: 54px;
   border-radius: 50%;
   background-color: var(--primary-color);
-  color: var(--white-color);
-  -webkit-transition: all 0.2s ease;
-  -o-transition: all 0.2s ease;
-  transition: all 0.2s ease;
-  -webkit-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
-  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+}
+.back-to-top__icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 20px;
+  height: 20px;
 }
