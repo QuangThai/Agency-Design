@@ -685,6 +685,16 @@ img {
   padding-top: 147px;
   position: relative;
 }
+.testimonial__detail {
+  position: fixed;
+  padding: 40px;
+  background: var(--primary-color);
+  z-index: 5;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  box-shadow: 0 3px 4px rgba(0, 0, 0, 0.1);
+}
 .cirlce-box--six {
   top: 29%;
   right: 24%;

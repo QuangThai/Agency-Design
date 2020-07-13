@@ -259,7 +259,7 @@
   }
 }
 
-@media (max-width: 374px) {
+@media (max-width: 375px) {
   .about-us__circle-item {
     --w-h: 150px;
   }

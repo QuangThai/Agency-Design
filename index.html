@@ -10,8 +10,10 @@
    <link rel="shortcut icon" href="./images/logo.png" type="image/x-icon">
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
    <link rel="stylesheet" href="css/grid.css">
-   <link rel="stylesheet" href="css/style.css">
-   <link rel="stylesheet" href="css/responsive.css">
+   <link rel="stylesheet" href="./scss/main.css">
+   <!-- <link rel="stylesheet" href="css/style.css">
+   <link rel="stylesheet" href="css/responsive.css"> -->
+
 </head>
 
 <body>
@@ -210,7 +212,7 @@
                         <svg class="service__icon-right" role="img" xmlns="http://www.w3.org/2000/svg" width="24px"
                            height="24px" viewBox="0 0 24 24" aria-labelledby="arrowRightIconTitle" stroke="#fff"
                            stroke-width="1" stroke-linecap="square" stroke-linejoin="miter" fill="none" color="#fff">
-                           <title id="arrowRightIconTitle">Arrow Right</title>
+                           <title>Arrow Right</title>
                            <path d="M15 18l6-6-6-6" />
                            <path d="M3 12h17" />
                            <path stroke-linecap="round" d="M21 12h-1" />
@@ -245,7 +247,7 @@
                         <svg class="service__icon-right" role="img" xmlns="http://www.w3.org/2000/svg" width="24px"
                            height="24px" viewBox="0 0 24 24" aria-labelledby="arrowRightIconTitle" stroke="#000"
                            stroke-width="1" stroke-linecap="square" stroke-linejoin="miter" fill="none" color="#000">
-                           <title id="arrowRightIconTitle">Arrow Right</title>
+                           <title>Arrow Right</title>
                            <path d="M15 18l6-6-6-6" />
                            <path d="M3 12h17" />
                            <path stroke-linecap="round" d="M21 12h-1" />
@@ -279,7 +281,7 @@
                         <svg class="service__icon-right" role="img" xmlns="http://www.w3.org/2000/svg" width="24px"
                            height="24px" viewBox="0 0 24 24" aria-labelledby="arrowRightIconTitle" stroke="#fff"
                            stroke-width="1" stroke-linecap="square" stroke-linejoin="miter" fill="none" color="#fff">
-                           <title id="arrowRightIconTitle">Arrow Right</title>
+                           <title>Arrow Right</title>
                            <path d="M15 18l6-6-6-6" />
                            <path d="M3 12h17" />
                            <path stroke-linecap="round" d="M21 12h-1" />
@@ -394,20 +396,36 @@
                   sanctus est is the
                   lorem ipsum dolor sit amet. sed diam nonumy eirmod tempor invidunt ut labore et dolore
                   is the magna aliquyam.</p>
-
                <div class="testimonial__slider">
                   <h1 class="testimonial__slider-title">John Doe</h1>
                   <p class="testimonial__slider-desc">CEO, ABC Company</p>
                   <div class="testimonial__dots">
-                     <span class="testimonial__dots-one"></span>
-                     <span class="testimonial__dots-one testimonial__dots-one--active"></span>
-                     <span class="testimonial__dots-one"></span>
+                     <span class="testimonial__dots-one" onclick="currentSlide(1)"></span>
+                     <span class="testimonial__dots-one testimonial__dots-one--active" onclick="currentSlide(2)"></span>
+                     <span class="testimonial__dots-one" onclick="currentSlide(3)"></span>
                   </div>
                   <div class="testimonial__images">
                      <img class="testimonial__image" src="./images/1.png" alt="">
                      <img class="testimonial__image testimonial__image--active" src="./images/3.png" alt="">
                      <img class="testimonial__image" src="./images/2.png" alt="">
                   </div>
+                    <div class="testimonial__btns">
+                     <span class="testimonial__prev" onclick="plusSlides(-1)"> < </span>
+                     <span class="testimonial__next" onclick="plusSlides(+1)">> </span>
+                  </div>
+
+                  <div class="testimonial__detail">
+                     <img src="./images/3.png" alt="author">
+                     <h2 class="testimonial__detail-heading">John Doe</h2>
+                     <span class="testimonial__detail-skill">Web Developer</span>
+                     <p class="testimonial__detail-desc">
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Totam consequuntur provident nihil necessitatibus, dolor deserunt blanditiis cumque repudiandae accusamus dignissimos?
+                     </p>
+                     <div class="testimonial__detail-close">
+                        <img src="./images/close-black.131c68af.svg" alt="">
+                     </div>
+                  </div>
+                  <div class="testimonial__overlay"></div>
                </div>
             </div>
          </div>
